@@ -7,5 +7,7 @@ test 5.2
 
 feature text
 --new feature change
-
 test conflick main
+
+test conflict feature
+
