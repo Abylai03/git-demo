@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project experiments with a diffusion-like model, conceptually similar to TableDiffusion, for an indoor localization task. The primary goal is to generate synthetic Received Signal Strength Indicator (RSSI) data and evaluate its quality by comparing the performance of a K-Nearest Neighbors (KNN) regressor on both original and synthetic datasets for predicting X and Y coordinates.
+This project experiments with a diffusion-like model, conceptually similar to TableDiffusion, for an indoor localization task. The primary goal is to generate synthetic Received Signal Strength Indicator (RSSI) data and evaluate its quality by comparing the performance of a K-Nearest Neighbors (KNN) regressor on both original and synthetic datasets for predicting X and Y coordinates. [link](https://ieee-dataport.org/open-access/wifi-rssi-indoor-localization)`
 
 ## Dataset
 
