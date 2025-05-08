@@ -9,7 +9,7 @@ This project experiments with a diffusion-like model, conceptually similar to Ta
 The project utilizes an RSSI dataset collected from 11 Access Points (APs) using a Nexus 5 device.
 
 * **Source File:** `RSSI_6AP_Experiments/Nexus5_Data/Database_Nexus5_11APs.csv`
-* **Link:** `link(https://ieee-dataport.org/open-access/wifi-rssi-indoor-localization)`
+* **Link:** `[link](https://ieee-dataport.org/open-access/wifi-rssi-indoor-localization)`
 * **Preprocessing Steps:**
     * The first row of the CSV is dropped.
     * Columns are renamed for clarity ('Unnamed: 0' to 'X', 'Unnamed: 1' to 'Y').
