@@ -35,7 +35,7 @@ sudo apt install ffmpeg vlc
 ```
 
 ### Структура проекта
-
+```bash
 rtmp-to-rtsp-project/
 ├── rtmp_to_rtsp_converter.py # основной Python-скрипт
 ├── config.yaml # конфигурация входных/выходных потоков
@@ -43,7 +43,7 @@ rtmp-to-rtsp-project/
 ├── install_and_run.sh # установочный скрипт
 ├── README.md # документация
 └── logs/ # директория для логов
-
+```
 ### Конфигурация потоков
 
 Настройте файл config.yaml, указав нужные RTMP- и RTSP-адреса:
@@ -88,6 +88,7 @@ chmod +x install_and_run.sh
 
 ./install_and_run.sh
 ```
+
 Скрипт выполнит:
 
     установку зависимостей (pyyaml)
@@ -99,6 +100,7 @@ chmod +x install_and_run.sh
     создание логов в папке logs/
 
 ### Проверка RTSP-потока
+
 Способ 1: VLC
 
     Запустите VLC
@@ -112,10 +114,12 @@ chmod +x install_and_run.sh
     Нажмите "Play"
 
 Способ 2: ffplay
+
 ```bash
 
 ffplay rtsp://localhost:8554/cam1
 ```
+
 ### Логирование
 
 Все логи потоков сохраняются в logs/:
@@ -127,7 +131,3 @@ ffplay rtsp://localhost:8554/cam1
     logs/stream_manager.log
 
 Логи включают сообщения об ошибках, статусах запуска и остановки потоков.
-
-```
-
-```
