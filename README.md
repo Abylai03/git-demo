@@ -24,36 +24,40 @@
 
 ```bash
 brew install ffmpeg vlc
+```
 
-Ubuntu/Debian:
-bash
+### Ubuntu/Debian:
+
+```bash
 
 sudo apt update
 sudo apt install ffmpeg vlc
+```
 
-Структура проекта
+### Структура проекта
 
 rtmp-to-rtsp-project/
-├── rtmp_to_rtsp_converter.py       # основной Python-скрипт
-├── config.yaml                     # конфигурация входных/выходных потоков
-├── requirements.txt                # зависимости Python
-├── install_and_run.sh              # установочный скрипт
-├── README.md                       # документация
-└── logs/                          # директория для логов
+├── rtmp_to_rtsp_converter.py # основной Python-скрипт
+├── config.yaml # конфигурация входных/выходных потоков
+├── requirements.txt # зависимости Python
+├── install_and_run.sh # установочный скрипт
+├── README.md # документация
+└── logs/ # директория для логов
 
-Конфигурация потоков
+### Конфигурация потоков
 
 Настройте файл config.yaml, указав нужные RTMP- и RTSP-адреса:
 yaml
 
 streams:
-  - id: cam1
-    input: rtmp://example.com/live/cam1
-    output: rtsp://localhost:8554/cam1
 
-  - id: cam2
-    input: rtmp://example.com/live/cam2
-    output: rtsp://localhost:8554/cam2
+- id: cam1
+  input: rtmp://example.com/live/cam1
+  output: rtsp://localhost:8554/cam1
+
+- id: cam2
+  input: rtmp://example.com/live/cam2
+  output: rtsp://localhost:8554/cam2
 
 Где:
 
@@ -69,20 +73,21 @@ streams:
 
         или сымитировать поток с помощью FFmpeg
 
-Запуск проекта
+### Запуск проекта
 
     Сделайте скрипт исполняемым:
 
-bash
+```bash
 
 chmod +x install_and_run.sh
+```
 
-    Запустите:
+### Запустите:
 
-bash
+```bash
 
 ./install_and_run.sh
-
+```
 Скрипт выполнит:
 
     установку зависимостей (pyyaml)
@@ -93,7 +98,7 @@ bash
 
     создание логов в папке logs/
 
-Проверка RTSP-потока
+### Проверка RTSP-потока
 Способ 1: VLC
 
     Запустите VLC
@@ -107,11 +112,11 @@ bash
     Нажмите "Play"
 
 Способ 2: ffplay
-bash
+```bash
 
 ffplay rtsp://localhost:8554/cam1
-
-Логирование
+```
+### Логирование
 
 Все логи потоков сохраняются в logs/:
 
@@ -122,4 +127,7 @@ ffplay rtsp://localhost:8554/cam1
     logs/stream_manager.log
 
 Логи включают сообщения об ошибках, статусах запуска и остановки потоков.
+
+```
+
 ```
