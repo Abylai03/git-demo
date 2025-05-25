@@ -1,0 +1,4 @@
+streams:
+  - id: cam1
+    input: rtmp://example.com/live/cam1
+    output: rtsp://localhost:8554/cam1
